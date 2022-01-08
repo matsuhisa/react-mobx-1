@@ -1,9 +1,12 @@
-import { ToDo } from './ToDo';
+import { ToDoDoneCounter } from './ToDoDoneCounter';
+import { ToDoList } from './ToDoList';
+
 
 function App() {
   return (
     <>
-      {[...Array(10)].map((_, index) => <ToDo key={index} />)}
+      <ToDoDoneCounter />
+      <ToDoList />
     </>
   );
 }
